@@ -1,0 +1,137 @@
+p {
+  padding: 1px;
+}
+
+th:nth-child(1) {
+  width: 5%;
+}
+
+th:nth-child(2) {
+  width: 15%;
+}
+
+th:nth-child(3) {
+  width: 10%;
+}
+
+th:nth-child(4) {
+  width: 15%;
+}
+th:nth-child(5) {
+  width: 15%;
+}
+
+th:nth-child(6) {
+  width: 15%;
+}
+
+th:nth-child(7) {
+  width: 15%;
+}
+
+th:nth-child(8) {
+  width: 10%;
+}
+
+button {
+  margin: 15px;
+}
+
+p,
+tbody {
+  color: black;
+}
+
+.td-1 {
+  color: #FC7D14;
+}
+
+.td-2 {
+  color: white;
+}
+
+.avatar {
+  size: 50%;
+}
+
+.jailed {
+  color: #F44336;
+}
+
+.jailedNot {
+  color: #4CAF50;/*#00796b;*/
+}
+
+
+.ticker-small {
+  font-size: 70%;
+}
+
+::ng-deep .align-center > .mat-sort-header-container {
+  display:flex;
+  justify-content:center;
+}
+
+// mat-chip-list {
+//   display: flex;
+//   justify-content: center;
+// }
+
+.bond-status {
+  display: flex;
+  padding: 10px;
+  margin-left: 0;
+}
+
+.overflowed-text {
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.validator-avatar {
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+
+
+.badge {
+  margin-left: 10px;
+ }
+
+ .badge i {
+   margin: 0;
+ }
+
+ .badge-ticker {
+   font-size: 80%;
+ }
+
+ .list-group a:hover,
+ .list-group a:active {
+     color: white;
+ }
+
+.example-container {
+  height: 500px;
+  overflow: auto;
+}
+
+mat-table {
+  display: flex;
+}
+
+.mdb-progress {
+  height: 20px !important;
+}
+
+
+.dropdown-toggle {
+  color: white;
+  margin-left: 0;
+}
+
+.dropdown-menu {
+  background-color: white;
+}

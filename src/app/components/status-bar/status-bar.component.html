@@ -1,0 +1,33 @@
+<section class="status-bar">
+  <div class="row header-row">
+    <h2 class="subtitle header-subtitle">
+      {{(network$|async)}}
+    </h2>
+  </div>
+  <div class="row">
+    <div class="proposer-row">
+      <h2 *ngIf="(validatorsMap$|async).size" 
+          class="title proposer-title">
+        <i class="ion ion-md-person"></i>&nbsp; proposer - 
+        <mat-chip color="primary" selected>
+          <a href="javascript:undefined" (click)="openValidatorDialog( proposer$ )" style="cursor: pointer;">
+          <span *ngIf="(validatorsMap$|async).has( proposer$| async ); else elseBlockproposer">
+            {{ (validatorsMap$|async).get( proposer$| async )}}
+          </span>
+          <ng-template #elseBlockproposer>{{ proposer$ | async }}</ng-template> 
+          </a>
+      </mat-chip>
+      </h2>
+    </div>
+  </div>
+  <div @fadeInAnimation class="container">
+    <span *ngIf="(height$|async) !== '0'; else elseBlock">
+      <app-carousel></app-carousel>
+    </span>
+  </div>
+  <ng-template #elseBlock>
+    <div style="display: flex; justify-content: center;">
+      <mdb-spinner spinnerColor="blue"></mdb-spinner>
+    </div> 
+  </ng-template>
+</section>

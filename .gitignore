@@ -1,0 +1,7 @@
+node_modules
+dist
+
+#TODO @aakatev
+# uncomment before
+# making app public!
+#src/config

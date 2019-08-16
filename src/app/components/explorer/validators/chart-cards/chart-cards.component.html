@@ -1,0 +1,64 @@
+<div class="row">
+  <!-- Block Time Chart -->
+  <div class="col-xl-4 col-12 mb-5">   
+    <div class="card card-cascade narrower">  
+      <div class="view view-cascade gradient-card-header indigo">
+        <canvas mdbChart
+          height="197"
+          width="394"
+          [chartType]="blockChartType"
+          [datasets]="blockChartDatasets"
+          [labels]="blockChartLabels"
+          [options]="blockChartOptions"
+          [legend]="true"
+          [colors]="blockChartColors">
+        </canvas>
+      </div>
+      <mdb-card-body class="text-center">
+        <span mdbTooltip="Last 100 blocks" placement="top">
+          <mdb-icon far icon="clock"></mdb-icon>&nbsp;Block Time  
+        </span>        
+      </mdb-card-body>
+    </div>
+  </div>
+
+  <!-- Commission Chart -->
+  <div class="col-xl-4 col-12 mb-5">   
+    <div class="card card-cascade narrower">  
+      <div class="view view-cascade gradient-card-header blue-gradient">
+        <canvas mdbChart
+          height="197"
+          width="394"
+          [chartType]="commissionChartType"
+          [datasets]="commissionChartDatasets"
+          [labels]="commissionChartLabels"
+          [options]="commissionChartOptions"
+          [legend]="true"
+          [colors]="commissionChartColors">
+      </canvas>
+      </div>
+      <mdb-card-body class="text-center">
+        <mdb-icon far icon="chart-bar"></mdb-icon>&nbsp;Commission Distribution 
+      </mdb-card-body>
+    </div>
+  </div>
+
+  <!-- Voting Power Chart -->
+  <div class="col-xl-4 col-12 mb-5">   
+    <div class="card card-cascade narrower">  
+      <div class="view view-cascade gradient-card-header mdb-color lighten-4">
+        <canvas mdbChart
+          [datasets]="scatterChartData"
+          [options]="scatterChartOptions"
+          [chartType]="scatterChartType"
+          [labels]="scatterChartLabels"
+          [colors]="scatterChartColors"
+          [legend]="true">
+        </canvas>
+      </div>
+      <mdb-card-body class="text-center">
+        <mdb-icon fas icon="users"></mdb-icon>&nbsp;Voting Power
+      </mdb-card-body>  
+    </div>  
+  </div>
+</div>
